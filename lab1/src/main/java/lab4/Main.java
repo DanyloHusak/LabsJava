@@ -8,8 +8,7 @@ public class Main {
         Shelter shelter = new Shelter();
 
         Animal.Builder dogBuilder = new Animal.Builder()
-                .setSpecies("Dog")
-                .setAge(3);
+                .setSpecies("Dog");
 
         try {
             dogBuilder.validate();
@@ -21,7 +20,6 @@ public class Main {
 
         Cat.CatBuilder catBuilder = new Cat.CatBuilder()
                 .setSpecies("Cat")
-                .setAge(5)
                 .setColor("Black");
 
         try {

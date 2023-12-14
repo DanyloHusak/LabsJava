@@ -17,11 +17,9 @@ public class Main {
 
         animals.add(dog);
 
+        AnimalService.sortByName(animals);
 
-        AnimalService1.sortByName(animals);
-
-
-        List<Animal> filteredAnimals = AnimalService1.filterBySpecies(animals, "Dog");
+        List<Animal> filteredAnimals = AnimalService.filterBySpecies(animals, "Dog");
         System.out.println("Filtered Animals: " + filteredAnimals);
     }
 }

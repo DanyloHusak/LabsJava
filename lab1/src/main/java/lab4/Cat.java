@@ -31,14 +31,14 @@ public class Cat extends Animal {
         @Override
         public void validate() {
             setColor(color);
-            }
         }
+    }
 
-        @Override
-        public Cat build() {
-            validate();
-            return new Cat(getSpecies(), calculateAge(getDateOfBirth()), color);
-        }
+    @Override
+    public Cat build() {
+        validate();
+        return new Cat(getSpecies(), calculateAge(getDateOfBirth()), color);
+    }
 
     private void validate() {
     }
@@ -52,4 +52,4 @@ public class Cat extends Animal {
         LocalDate currentDate = LocalDate.now();
         return Period.between(birthDate, currentDate).getYears();
     }
-    }
+}

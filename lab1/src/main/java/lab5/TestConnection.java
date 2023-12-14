@@ -8,7 +8,7 @@ public class TestConnection {
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/Animal";
         String user = "root";
-        String password = "root";
+        String password = "root1029384756";
 
         String connectionName = "MySQLConnection";
         try {

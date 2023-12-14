@@ -1,1 +1,1 @@
-Species=null, DateOfBirth=null, Name=null, Color=null
+Species=null

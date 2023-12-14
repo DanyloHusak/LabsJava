@@ -7,7 +7,7 @@ public class Cat extends Animal {
     private static final LocalDate dateOfBirth = null;
     private String color;
 
-   
+
     public Cat(String cat, String black, int i, String luna) {
     }
 

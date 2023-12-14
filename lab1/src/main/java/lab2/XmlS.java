@@ -1,4 +1,3 @@
-// XmlS.java
 package lab2;
 
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;

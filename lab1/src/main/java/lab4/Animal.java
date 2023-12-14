@@ -1,4 +1,4 @@
-import lab4.Cat;
+package lab4;
 
 public class Animal {
     private String species;
@@ -12,8 +12,8 @@ public class Animal {
     public Animal() {}
 
     public static class Builder {
-        private String species;
-        private int age;
+        private String species = "";
+        private int age = 0;
 
         public Builder setSpecies(String species) {
             if (species == null || species.isEmpty()) {
@@ -31,9 +31,10 @@ public class Animal {
             return this;
         }
 
-        public void validate() {
+        public Builder validate() {
             setSpecies(species);
             setAge(age);
+            return this;
         }
 
         public Animal build() {
@@ -50,4 +51,5 @@ public class Animal {
             return null;
         }
     }
+
 }

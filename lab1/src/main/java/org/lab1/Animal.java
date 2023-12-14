@@ -1,7 +1,5 @@
 package org.lab1;
 
-import lab4.Cat;
-
 import java.time.LocalDate;
 import java.util.Objects;
 
@@ -96,25 +94,22 @@ public class Animal {
             return new Animal(species, name, color);
         }
 
-        public Cat.CatBuilder setColor(String color) {
+        public Builder setColor(String color) {
             this.color = color;
-            return null;
+            return this;
         }
 
-        public String setName(String name) {
-        this.name = name;
-            return name;
+        public Builder setName(String name) {
+            this.name = name;
+            return this;
         }
 
-        public Builder setAge(int i) {
-            return null;
-        }
 
         public void validate() {
         }
     }
-        public String getName() {
-            return name;
+    public String getName() {
+        return name;
     }
     public String getAge() {
         return name;

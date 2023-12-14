@@ -1,4 +1,3 @@
-// JsonS.java
 package lab2;
 
 import com.fasterxml.jackson.databind.ObjectMapper;

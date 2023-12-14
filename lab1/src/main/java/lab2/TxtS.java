@@ -34,8 +34,6 @@ public class TxtS implements Serializer {
             LocalDate dateOfBirth = LocalDate.parse(parts[3], formatter);
             String name = parts[5];
             String color = parts[7];
-
-            return (T) new Animal(species, dateOfBirth, name, color);
         }
         return null;
     }
